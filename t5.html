@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="t5.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="weather-container">
+    <h1>Weather App</h1>
+    <div id="location-container">
+      <label for="location">Enter Location:</label>
+      <input type="text" id="location" placeholder="City, Country">
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+    <div id="weather-info" class="hidden">
+      <h2 id="location-name"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+      <p id="wind-speed"></p>
+    </div>
+  </div>
+  <script src="t5.js"></script>
+</body>
+</html>
